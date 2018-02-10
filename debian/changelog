@@ -1,0 +1,5 @@
+rfkill-dkms (1.00custom) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Kumar Appaiah <akumar@debian.org>  Sat, 10 Feb 2018 14:59:59 +0530

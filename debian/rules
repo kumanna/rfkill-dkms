@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+include /usr/share/dpkg/pkg-info.mk
+
+BUILD_DATE := $(shell dpkg-parsechangelog --show-field Date)
+
+%:
+	dh $@ --with dkms
+
+override_dh_auto_build:
+	# pass, we just don't build now
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/rfkill-dkms/usr/src/rfkill-$(DEB_VERSION_UPSTREAM)
+	cp -ar Makefile core.c input.c Kconfig rfkill-gpio.c rfkill.h debian/rfkill-dkms/usr/src/rfkill-$(DEB_VERSION_UPSTREAM)

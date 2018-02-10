@@ -1,0 +1,18 @@
+Format-Specification:
+ http://wiki.debian.org/Proposals/CopyrightFormat?action=recall&rev=454
+Upstream-Name: rfkill
+Upstream-Source: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/rfkill
+
+Files: core.c rfkill.h
+ Copyright: (C) 2006 - 2007 Ivo van Doorn
+ Copyright (C) 2007 Dmitry Torokhov
+ Copyright 2009 Johannes Berg <johannes@sipsolutions.net>
+License: GPL-2+
+
+Files: rfkill-gpio.c
+ * Copyright (c) 2011, NVIDIA Corporation.
+License: GPL-2+
+
+License: GPL-2 | GPL-2+
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in the /usr/share/common-licenses/GPL-2 file.
