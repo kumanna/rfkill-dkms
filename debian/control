@@ -1,4 +1,4 @@
-Source: rfkill-dkms
+Source: rfkillmod-dkms
 Section: kernel
 Priority: optional
 Maintainer: Kumar Appaiah <akumar@debian.org>
@@ -7,7 +7,7 @@ Build-Depends-Indep: bzip2, dkms
 Standards-Version: 4.1.1
 Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/rfkill
 
-Package: rfkill-dkms
+Package: rfkillmod-dkms
 Architecture: all
 Depends: ${misc:Depends}
 Description: Forked rfkill DKMS support package

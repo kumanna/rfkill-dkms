@@ -1,4 +1,4 @@
-rfkill-dkms (1.00custom) unstable; urgency=medium
+rfkillmod-dkms (1.00custom) unstable; urgency=medium
 
   * Initial release.
 

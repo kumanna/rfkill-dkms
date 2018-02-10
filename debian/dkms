@@ -1,4 +1,4 @@
-PACKAGE_NAME="rfkill"
+PACKAGE_NAME="rfkillmod"
 PACKAGE_VERSION="1.00custom"
 MAKE[0]="make -C ${kernel_source_dir} M=${dkms_tree}/${PACKAGE_NAME}/${PACKAGE_VERSION}/build"
 CLEAN="make -C ${kernel_source_dir} M=${dkms_tree}/${PACKAGE_NAME}/${PACKAGE_VERSION}/build clean"

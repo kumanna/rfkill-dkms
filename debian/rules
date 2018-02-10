@@ -14,5 +14,5 @@ override_dh_auto_build:
 	# pass, we just don't build now
 
 override_dh_auto_install:
-	mkdir -p $(CURDIR)/debian/rfkill-dkms/usr/src/rfkill-$(DEB_VERSION_UPSTREAM)
-	cp -ar Makefile core.c input.c Kconfig rfkill-gpio.c rfkill.h debian/rfkill-dkms/usr/src/rfkill-$(DEB_VERSION_UPSTREAM)
+	mkdir -p $(CURDIR)/debian/rfkillmod-dkms/usr/src/rfkillmod-$(DEB_VERSION_UPSTREAM)
+	cp -ar Makefile core.c input.c Kconfig rfkill-gpio.c rfkill.h debian/rfkillmod-dkms/usr/src/rfkillmod-$(DEB_VERSION_UPSTREAM)
